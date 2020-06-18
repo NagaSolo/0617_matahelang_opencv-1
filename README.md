@@ -10,3 +10,9 @@
 ### Idea
 - Computer Vision Project Idea – QR code and barcodes are used everywhere and they store some information in them. 
 - We can detect the QR code and Barcode from the image to process it further and decode the encrypted data.
+
+### Opportunity
+- Many uses
+
+### Progress
+- download library from here: *http://libccv.org/tutorial/*
