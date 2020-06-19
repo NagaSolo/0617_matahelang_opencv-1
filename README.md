@@ -15,4 +15,5 @@
 - Many uses
 
 ### Progress
-- download library from here: *http://libccv.org/tutorial/*
+- download library from here: *http://libccv.org/tutorial/*-> `DONE`
+- use library -> `WIP`
