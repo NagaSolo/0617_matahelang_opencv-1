@@ -16,4 +16,4 @@
 
 ### Progress
 - download library from here: *http://libccv.org/tutorial/*-> `DONE`
-- use library -> `WIP`
+- use library -> `OpenCV` -> `Using`
