@@ -17,3 +17,4 @@
 ### Progress
 - download library from here: *http://libccv.org/tutorial/*-> `DONE`
 - use library -> `OpenCV` -> `Using`
+- main dev env @`repl.t`

@@ -3,7 +3,7 @@ from cv2 import VideoCapture
 import numpy as np
 
 # checking installation status & version of module
-print('Version number is {} '.format(cv.__version__))
+print(f'Version number is {cv.__version__} ')
 
 # pass int 0 for first camera on our device
 cap = VideoCapture('test/shesgone.mp4')
@@ -12,7 +12,6 @@ while program_masih_berjalan:
   if (cap.isOpened() == False):
     print('Error opening camera')
     break
-    exit()
   elif (cap.isOpened() == True):
     # frame by frame capture
     ret, frame = cap.read()
