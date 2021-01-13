@@ -2,3 +2,4 @@ test
 created_qr_imgs
 db
 env
+__pycache__
