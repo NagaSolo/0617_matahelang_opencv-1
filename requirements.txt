@@ -3,3 +3,4 @@ numpy
 qrcode
 pillow
 tinydb
+streamlit
