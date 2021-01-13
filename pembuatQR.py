@@ -22,7 +22,7 @@ def insert_db(info: dict) -> str:
     from tinydb import TinyDB, Query
     db = TinyDB('db/links.json')
     Jalinan = Query()
-    if info['Link'] != db.search(Jalinan.Link == info['Link']):
+    if db.search(Jalinan.Link == info['Link']):
         return f'\n\'{info["Link"]}\' sudah berada didalam DB\n'
     db.insert(info)
     return f'\nBerjaya menyimpan maklumat \'{info["Link"]}\'\n'
@@ -36,7 +36,7 @@ def read_qr_image(filename: str) -> str:
 
 if __name__ == "__main__":
     # contoh data
-    data = {'Link':'thepythoncode.com', 'Category': 'Software', 'Description':'Cool python tutorial website'}
+    data = {'Link':'thepythoncode.com', 'Kategori': 'Software', 'Deskripsi':'Cool python tutorial website'}
     print(create_db(data))
     print(create_qr(data))
     print(insert_db(data))
