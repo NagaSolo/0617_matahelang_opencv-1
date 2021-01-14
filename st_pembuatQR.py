@@ -1,5 +1,5 @@
 import streamlit as st
-from PembuatQR import cipta_imej_qr, insert_to_db, baca_imej_qr
+from PembuatQR import cipta_imej_qr, insert_to_db, baca_imej_qr, proses_link
 
 st.title('Bookmarking QR way')
 
@@ -17,7 +17,7 @@ with colCiptaQR:
             st.write(insert_to_db(info))
             with colImej:
                 st.header('QR bookmark dicipta')
-                nama_hasilan = '_'.join(info['Link'].split('.')) + '.png'
+                nama_hasilan = proses_link(info['Link'])
                 st.image('created_qr_imgs/'+nama_hasilan, caption=f'QR bookmark untuk {the_link}')
         mencipta = st.button('Cipta')
         if mencipta:
