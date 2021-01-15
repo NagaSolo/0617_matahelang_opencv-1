@@ -17,3 +17,8 @@
 ### Progress
 Prototype:
     - Create, update to db, and read QR code -> `DONE`
+    - Streamlit based app -> `DONE`
+
+### Prototypes
+QRBookmark:
+    - bookmark link using QR - `DONE`
