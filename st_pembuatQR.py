@@ -26,3 +26,11 @@ with colCiptaQR:
         st.write('Masukkan informasi untuk mencipta QR bookmark')
         with colImej:
             st.header('Tiada imej dicipta')
+            
+with st.beta_expander('QR bookmark dalam simpanan'):
+    import os
+    for f in os.listdir('created_qr_imgs'):
+        st.image('created_qr_imgs' + '/' + f)
+
+with st.beta_expander('Created by'):
+    st.write('Matahelang, Seramamas')
